@@ -1,0 +1,70 @@
+.bupload {
+  padding: 2rem;
+  width: 70%;
+  margin: 0 auto;
+
+  &__container {
+    box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.12);
+    border-radius: 1rem;
+    padding: 2rem;
+    background-image: linear-gradient(
+      190deg,
+      rgba($color-primary, 0.85),
+      rgba($color-secondary, 0.97)
+    );
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__input {
+    display: block;
+    padding: 1rem 1.5rem;
+    width: 70%;
+    margin: 0.7rem 0;
+    border: 0;
+    border-radius: 1rem;
+    // transition: all 0.2s;
+
+    &::-webkit-input-placeholder {
+      font-family: "Inter", sans-serif;
+      color: #585050;
+    }
+
+    &:focus {
+      outline: 2px solid $text;
+      //   width: 80%;
+    }
+  }
+
+  &__hidden {
+    display: none;
+  }
+
+  label {
+    width: 70%;
+    display: block;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: $white;
+    color: $color-primary;
+    border-radius: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  &__btn {
+    padding: 1.1rem 3rem;
+    font-size: 1.7rem;
+    text-align: center;
+    color: $white;
+    border: 0;
+    border-radius: 1.5rem;
+    background-color: $color-primary;
+    cursor: pointer;
+  }
+}

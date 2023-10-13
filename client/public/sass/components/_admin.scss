@@ -1,0 +1,194 @@
+.admin {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10rem 0;
+  &__container {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 2rem;
+
+    padding: 10rem 5rem;
+    background-color: rgba(#d0cccc, 0.9);
+
+    color: $color-primary;
+  }
+
+  &__sidebar {
+    background-color: $color-primary;
+    color: $white;
+    padding: 1rem;
+  }
+
+  &__list {
+    padding: 0.7rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    display: block;
+    // background-color: rgba(#ced4da, 0.45);
+    transition: color 0.3s ease;
+    text-transform: capitalize;
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba($text, 0.4);
+    }
+
+    &:hover {
+      background-color: rgba(#ced4da, 0.83);
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 2rem;
+  }
+
+  &__user-n {
+    display: flex;
+    align-items: center;
+    span {
+      display: inline-block;
+      margin-left: 3rem;
+      font-size: 1.2rem;
+    }
+  }
+  &__role {
+    padding: 0.5rem 1.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $white;
+    font-size: 1rem;
+    border-radius: 10rem;
+  }
+
+  &__admin {
+    background-color: $color-primary;
+    color: $white;
+  }
+
+  &__newUsers {
+    padding: 2rem 1rem;
+    // background-color: red;
+    box-shadow: 0 2rem 3rem 0 rgba(#000, 0.123);
+  }
+
+  &__user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    background-color: rgba($text, 0.123);
+    // background-color: rgba($color-secondary, 0.42);
+    // box-shadow: 0 2rem 4rem 0 rgba($text, 0.1093);
+    border-radius: 1.2rem;
+  }
+
+  &__user-photo {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__latest {
+    box-shadow: 0 2rem 6rem 0 rgba(#ced4da, 0.91);
+    box-shadow: 0 2rem 4rem 0 rgba(#000, 0.1093);
+    // border: 0.1rem solid $white;
+    // background-color: rgba($text, 0.323);
+  }
+
+  &__items {
+    padding: 2rem 1rem;
+    display: flex;
+  }
+
+  &__item {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: $text;
+    color: #ddd;
+
+    span {
+      font-size: 2rem;
+      font-weight: 800;
+    }
+  }
+
+  &__value {
+    display: block;
+    font-size: 4rem;
+  }
+
+  &__orders {
+    background-color: blueviolet;
+  }
+  &__products {
+    background-color: coral;
+  }
+
+  &__feedback {
+    background-color: olivedrab;
+  }
+
+  &__users {
+    background-color: yellowgreen;
+  }
+
+  &__title {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  &__incoming-orders {
+    padding: 1rem;
+  }
+
+  &__order {
+    padding: 1rem;
+    // box-shadow: 0 2rem 4rem 0 rgba(#000, 0.1093);
+    margin: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: rgba($text, 0.123);
+    &:hover {
+      background-color: $color-secondary;
+      color: #ddd;
+    }
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__order-name {
+    font-size: 1.2rem;
+  }
+
+  &__tname,
+  &__tcontact,
+  &__t {
+    font-weight: 800;
+    display: inline-block;
+    font-size: 1.4rem;
+  }
+
+  &__customer {
+    font-size: 1.2rem;
+  }
+  &__btn {
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+  }
+
+  &__newEmail {
+    padding: 0.5rem 1rem;
+    background-color: $color-secondary;
+    border-radius: 10rem;
+    margin: 0 0.3rem;
+  }
+
+  &__viewed {
+    background-color: rgba($text, 0.23);
+  }
+}

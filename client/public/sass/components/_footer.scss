@@ -1,0 +1,18 @@
+.footer {
+  padding: 3rem 0;
+  background-color: $color-primary;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include response(tablet) {
+      flex-direction: column;
+    }
+  }
+
+  li {
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+}

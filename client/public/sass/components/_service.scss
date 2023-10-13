@@ -1,0 +1,55 @@
+.servicesNav {
+  width: 70%;
+  position: relative;
+  &__item-box {
+    width: 70%;
+    background-color: $color-primary;
+    z-index: 1000;
+    // transform: translateY(7.04rem) translateX(-12.2rem);
+    padding: 1rem;
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%, 0rem);
+    display: none;
+  }
+
+  &__item {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  &__arrow {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__item &__item-nest {
+    display: none;
+    width: 20rem;
+    // transform: translateY(10rem);
+    position: absolute;
+    top: 5rem;
+    // background-color: $color-secondary;
+  }
+
+  &__item &__item-nest li {
+    padding: 1rem;
+    background-color: rgba($text, 0.84);
+    margin: 0.5rem 0;
+    color: $color-secondary;
+
+    &:hover {
+      background-color: rgba($text, 0.94);
+    }
+  }
+
+  &__item:hover &__item-nest {
+    display: block;
+  }
+}

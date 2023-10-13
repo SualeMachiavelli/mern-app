@@ -1,0 +1,31 @@
+.hamper {
+  width: 90%;
+  margin: 0 auto;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    gap: 2rem;
+  }
+
+  &__card {
+    // background-color: yellow;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    background-color: red;
+    flex: 0.35;
+    // border-bottom-left-radius: 5rem;
+    // border-bottom-right-radius: 5rem;
+    clip-path: ellipse(100% 80% at 20% 30%);
+    // clip-path: path("M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z");
+  }
+
+  &__bottom {
+    background-color: white;
+    flex: 0.65;
+  }
+}

@@ -1,0 +1,192 @@
+.related {
+  padding: 6rem 3rem 6rem 3rem;
+  margin: 0 2rem;
+  position: relative;
+
+  @include response(phone) {
+    padding: 2rem 0;
+    margin: 0;
+  }
+
+  &__title {
+    padding: 1rem;
+    font-size: 2rem;
+    // font-weight: 800;
+    // text-transform: uppercase;
+
+    @include response(tablet) {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+
+    @include response(phone) {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    @include response(tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include response(phone) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__single {
+    box-shadow: 0 1rem 4rem 1rem rgba(0, 0, 0, 0.045);
+    margin: 1rem 0;
+    border-radius: 1rem;
+    background-color: $color-primary;
+
+    @include response(phone) {
+      height: auto;
+    }
+  }
+
+  h2 {
+    padding: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  &__items {
+    padding: 1rem 0.5rem;
+  }
+
+  &__ratings {
+    display: flex;
+    align-items: center;
+  }
+
+  &__rating {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+    color: $color-primary;
+    font-weight: 700;
+  }
+
+  &__name {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+
+    display: inline-block;
+    font-weight: 600;
+  }
+  &__price {
+    font-size: 2rem;
+    // padding: 1rem;
+    // font-weight: 700;
+    display: block;
+  }
+
+  &__summary {
+    display: block;
+    font-size: 1.5rem;
+    // padding: 0.5rem;
+  }
+
+  &__btn {
+    padding: 1rem 3rem;
+    border: 0;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    right: 2rem;
+    margin: 1.5rem 0.5rem;
+    display: flex;
+    justify-content: right;
+    background-color: $color-secondary;
+    color: $text;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: rgba($color-secondary, 0.845);
+      color: $white;
+    }
+  }
+
+  &__search {
+    padding: 2rem;
+    margin: 2rem 0 1rem 0;
+    border: 1px solid $color-primary;
+    border-radius: 1rem;
+    // background-color: rgba($text, 0.23);
+  }
+
+  &__options {
+    padding: 1.5rem 2rem;
+    border: 0;
+    border-radius: 10rem;
+    margin-right: -2rem;
+    background-color: $color-primary;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  &__option {
+    font-size: 1.7rem;
+    padding: 0 0.5rem;
+  }
+
+  &__sbtn {
+    padding: 1.5rem;
+    margin-left: -2rem;
+  }
+
+  &__input {
+    padding: 1.5rem 1rem;
+    border: 0;
+    width: 60%;
+    transition: all 0.3s ease;
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0 2rem 3rem 2rem rgba($text, 0.109);
+      width: 80%;
+    }
+  }
+
+  &__pagination {
+    padding: 7rem 0;
+    width: 20rem;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  &__prev,
+  &__next {
+    background-color: $white;
+  }
+}
+
+.star {
+  width: 2.4rem;
+  height: 2.4rem;
+  stroke: $color-primary;
+}
+
+// .productWrapper {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+// }

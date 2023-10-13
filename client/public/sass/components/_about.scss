@@ -1,0 +1,116 @@
+.about {
+  width: 100%;
+  padding: 20rem 2rem;
+  margin: 0 auto;
+
+  &__title {
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+
+  &__main {
+    box-shadow: 0 2rem 5rem 0rem rgba($text, 0.34);
+    display: grid;
+    grid-template-columns: 55rem 1fr;
+    gap: 1rem;
+    background-color: $color-primary;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    @include response(laptop) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include response(tablet) {
+      grid-template-columns: 1fr;
+    }
+
+    @include response(maxphone) {
+      height: auto;
+      grid-template-columns: max-content;
+      margin: 0 auto;
+    }
+  }
+
+  &__content {
+    padding: 2rem 2rem 3rem 2rem;
+    // padding-left: 3rem;
+  }
+
+  &__heading {
+    padding: 1rem;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+
+    @include response(tablet) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__text {
+    padding: 0.9rem;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    font-weight: 400;
+
+    @include response(laptop) {
+      padding: 0.5rem;
+      line-height: 1.8;
+      display: inline;
+      // width: 20rem;
+      font-size: 1.2rem;
+    }
+
+    @include response(tablet) {
+      width: auto;
+      line-height: 1.9;
+    }
+
+    @include response(phone) {
+      width: 100%;
+      height: 20rem;
+      object-fit: cover;
+      padding: 0.5rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+
+    @include response(laptop) {
+      width: 40rem;
+      height: 40rem;
+    }
+
+    @include response(maxphone) {
+      width: 30rem;
+      height: 30rem;
+    }
+
+    @include response(phone) {
+      width: 25rem;
+      height: 20rem;
+      object-fit: cover;
+      padding: 0.5rem;
+    }
+  }
+
+  &__btn {
+    margin-top: 4rem;
+    background-color: $color-secondary;
+    color: $text;
+
+    &:hover {
+      background-color: rgba($text, 0.64);
+      color: #ddd;
+    }
+  }
+}

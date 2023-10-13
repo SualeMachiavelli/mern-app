@@ -1,0 +1,54 @@
+.upload {
+  max-width: 60rem;
+  padding: 1rem 0;
+  margin: 3rem auto;
+  box-shadow: 0 2rem 2rem 2rem rgba(0, 0, 0, 0.125);
+
+  &__form {
+  }
+
+  h2 {
+    padding: 2rem 1rem;
+    font-size: 2rem;
+  }
+
+  &__input {
+    padding: 1rem;
+    border: 0;
+    margin: 1.5rem 1rem;
+    display: block;
+    width: 90%;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__hidden {
+    display: none;
+  }
+
+  label {
+    width: 90%;
+    padding: 1.2rem;
+    background-color: $color-secondary;
+    display: block;
+    margin: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+    // border-radius: 10rem;
+  }
+  &__btn {
+    padding: 1rem 2rem;
+    display: block;
+    margin: 1rem;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

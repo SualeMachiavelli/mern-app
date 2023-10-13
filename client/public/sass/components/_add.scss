@@ -1,0 +1,82 @@
+.add {
+  //   width: 40rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  box-shadow: 0 3rem 5rem 0 rgba(0, 0, 0, 0.12);
+  position: relative;
+  background-color: rgba($color-primary, 0.163);
+  h2 {
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+  p {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+
+    span {
+      font-size: 1.4rem;
+    }
+    strong {
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+  }
+  &__btn {
+    display: block;
+    padding: 1rem 2rem;
+    border: 0;
+    background-color: $white;
+    text-align: center;
+    border-radius: 10rem;
+    color: text;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+
+  input {
+    padding: 0.7rem 1rem;
+    border: 0;
+    width: 80%;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    // background-color: $color-secondary;
+
+    &:focus {
+      outline: 2px solid $color-primary;
+    }
+
+    &[type="text"] {
+      // color: $text;
+    }
+
+    // &::placeholder {
+    //   color: $text;
+    // }
+  }
+
+  &__close {
+    font-size: 1.4rem;
+    padding: 0.4rem 0.8rem;
+    background-color: $color-primary;
+    border-radius: 10rem;
+    cursor: pointer;
+    position: absolute;
+    top: 23rem;
+    z-index: 100;
+
+    &:hover {
+      background-color: red;
+    }
+  }
+
+  &__error {
+    padding: 0.5rem;
+    color: red;
+  }
+}

@@ -1,0 +1,62 @@
+$color-primary: #fba1b7;
+$color-secondary: #ffd1da;
+
+$text: #212529;
+$white: #ffffff;
+// #fff0f5;
+
+$color-primary: #087f5b;
+$color-secondary: #39ce95;
+
+$color-primary: #862e9c;
+$color-secondary: #d189e9;
+// $text: #fff;
+$text: #e8cbff;
+
+$color-secondary: #b5408a;
+$color-primary: #4f177d;
+$text: #f6ebff;
+
+$white: #f7effa;
+
+@mixin response($breakpoint) {
+  @if ($breakpoint == mini) {
+    @media only screen and (max-width: 28.75em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == phone) {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == maxphone) {
+    @media only screen and (max-width: 40em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == tablet) {
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == laptop) {
+    @media only screen and (max-width: 62em) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == large) {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == diff) {
+    @media (min-width: 40em) {
+      @content;
+    }
+  }
+}

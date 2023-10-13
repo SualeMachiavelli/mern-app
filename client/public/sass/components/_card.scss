@@ -1,0 +1,93 @@
+.card {
+  padding: 2rem 0;
+  // position: relative;
+
+  h1 {
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  p {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  &__main {
+    width: 60rem;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    border-radius: 2rem;
+    box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.12);
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.96),
+      rgba($color-secondary, 0.87)
+    );
+  }
+
+  &__form {
+    width: 80%;
+    margin: 0 auto;
+
+    // text-align: center;
+  }
+
+  &__input {
+    width: 100%;
+    margin: 1rem 0;
+    border: 0;
+    padding: 1.2rem 2rem;
+    border-radius: 10rem;
+    display: block;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__hidden {
+    display: none;
+  }
+  &__label {
+    width: 100%;
+    display: block;
+    border-radius: 10rem;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    background-color: $color-primary;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+  &__btn {
+    display: inline-block;
+    padding: 1.1rem 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: $color-primary;
+    border: 0;
+    border-radius: 10rem;
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $white;
+      color: #302e2e;
+    }
+  }
+  &__close {
+    font-size: 2rem;
+    padding: 0.8rem 2rem;
+    background-color: $color-secondary;
+    border-radius: 10rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: red;
+    }
+  }
+}

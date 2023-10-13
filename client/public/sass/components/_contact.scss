@@ -1,0 +1,148 @@
+.contact {
+  width: 100%;
+  height: 100vh;
+  margin: 3rem auto;
+  padding: 8rem 2rem;
+
+  @include response(laptop) {
+    height: auto;
+  }
+  &__title {
+    font-size: 3rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: $color-primary;
+
+    @include response(laptop) {
+      font-size: 2rem;
+    }
+    @include response(tablet) {
+      font-size: 1.5rem;
+    }
+    @include response(maxphone) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__main {
+    padding: 3rem 0;
+    position: relative;
+    // background-color: rgba($color-primary, 0.72);
+
+    display: grid;
+    grid-template-columns: 50rem 1fr;
+
+    @include response(tablet) {
+      grid-template-columns: 1fr;
+      padding: 2rem 0;
+    }
+  }
+  &__photo {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 1rem;
+
+    @include response(tablet) {
+      height: auto;
+    }
+  }
+
+  &__bg {
+    width: 100%;
+    height: 40rem;
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba($text, 0.23);
+    background-color: rgba($color-primary, 0.53);
+    border-radius: 1rem;
+  }
+  &__content {
+    z-index: 10;
+    margin: 2rem;
+
+    @include response(tablet) {
+      margin: 1rem;
+      margin-top: 5rem;
+    }
+  }
+  &__form {
+    padding: 1rem;
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+
+    @include response(tablet) {
+      font-size: 1.3rem;
+      padding: 0 1rem;
+    }
+
+    @include response(tablet) {
+      font-size: 1rem;
+    }
+  }
+  input {
+    padding: 1.1rem;
+    width: 90%;
+    border: 0;
+    border-radius: 10rem;
+    display: block;
+    margin: 2rem 0rem;
+
+    @include response(tablet) {
+      width: 20rem;
+      margin: 1rem 0;
+    }
+
+    @include response(maxphone) {
+      width: 15rem;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__sbtn {
+    padding: 1.1rem 3rem;
+    @include response(tablet) {
+      padding: 1rem 2rem;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    padding: 1rem;
+    z-index: 3;
+
+    @include response(tablet) {
+      flex-direction: column;
+    }
+  }
+
+  ul li span {
+    font-size: 2rem;
+    padding: 1rem;
+    display: block;
+    flex-wrap: wrap;
+    color: $white;
+    @include response(tablet) {
+      font-size: 1.4rem;
+      padding: 0.4rem;
+    }
+    @include response(maxphone) {
+      font-size: 1.2rem;
+    }
+  }
+}
